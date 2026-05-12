@@ -1,0 +1,1053 @@
+   /* Give all main headings a bit more breathing room */
+    h1, h2, h3 {
+      padding-bottom: 0.4rem;
+    }
+
+    /* Emphasize the 3rd (center) color slide */
+    #colorsTrack .color-slide:nth-child(3) {
+      transform: scale(1.08);
+      z-index: 1;
+    }
+
+    #colorsTrack .color-slide:nth-child(3) h3 {
+      font-weight: 700;
+      color: #03ab84;
+    }
+
+    #colorsTrack .color-slide {
+      transition: transform 0.2s ease-in;
+    }
+
+    /* Make all images have rounded corners */
+    img {
+      border-radius: 12px;
+    }
+
+    /* Override: sections that should have square images */
+    .section-no-radius img {
+      border-radius: 0px;
+    }
+
+    .full-width {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero-video-wrapper {
+      width: 100%;
+      background-image: url('https://storage.capsandplugsusa.com/public/editor/image/product/navigate_69dfd6f98c45a.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 700px;          /* minimum hero height */
+      display: flex;              /* enable vertical centering */
+      align-items: center;        /* center container vertically */
+    }
+
+    .video_text_row {
+      position: relative;
+      z-index: 1;
+      justify-content: center;    /* center logo + h1 within the column */
+      gap: 1.5rem;
+      text-align: center;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      padding-left: 2rem;         /* add horizontal breathing room */
+      padding-right: 2rem;
+      min-height: 700px;          /* ensure text block matches hero min height */
+    }
+
+    .hero-bottom {
+      margin-top: 0;      /* keep h1 grouped with logo in center */
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 4vw, 4rem);
+      font-weight: 700;
+      color:#ffffff;
+    }
+
+    .hero-price {
+      font-size: clamp(1.25rem, 2vw, 1.75rem);
+    }
+
+    .btn-outline-brand {
+      color: #03AB84;
+      border-color: #03AB84;
+      font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .btn-outline-brand:hover {
+      color: #fff;
+      background-color: #03AB84;
+      border-color: #03AB84;
+    }
+
+    /* Solid brand button for key CTAs */
+    .btn-brand {
+      color: #fff;
+      background-color: #03AB84;
+      border-color: #03AB84;
+      padding: 0.56rem 1.31rem;  /* ~75% of original */
+      font-size: 0.79rem;        /* ~75% of original */
+      border-radius: 999px;
+      font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .btn-brand:hover {
+      color: #fff;
+      background-color: #028767;
+      border-color: #028767;
+    }
+
+    .btn-buy-now {
+      padding: 0.68rem 1.58rem; /* ~75% of original */
+      font-size: 0.86rem;       /* ~75% of original */
+      border-radius: 999px;
+      font-weight: 500;
+      font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .btn-buy-now:hover {
+      background-color: #028767;
+      color: #ffffff;
+      border-color: #028767;
+    }
+
+    /* Hero (Section 1) button: white outline with white text */
+    .hero-video-wrapper .btn-outline-brand.btn-buy-now {
+      color: #ffffff;
+      border-color: #ffffff;
+      background-color: transparent;
+    }
+
+    .hero-video-wrapper .btn-outline-brand.btn-buy-now:hover {
+      color: #7778C1;
+      background-color: #ffffff;
+      border-color: #ffffff;
+    }
+
+.hinged-lids-3 {
+  background-color: #1E5C96;
+      padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hinged-lids-3 h2 {
+  color: #ffffff;;
+      font-size: 21px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.hinged-lids-3 img {
+  display: block;
+  max-width: 120px;
+  width: 100%;
+  height: 82px;
+  margin: 0 auto 0.5rem;
+}
+
+/* Section 3 - Hinged Lids background grid */
+.hinged-grid-section h2 {
+  text-align: left;
+  color: #444444;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+
+.hinged-grid-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  min-height: 700px; /* ensures enough image is visible */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #433E3E;
+  display: flex;
+  align-items: flex-start;
+}
+
+.hinged-grid-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  
+}
+
+.hinged-grid-text {
+  position: relative;
+  padding: 1.5rem 1.75rem;
+  max-width: 55%;
+  color: #444444;
+}
+
+/* Allow full-width text in specific cards */
+.hinged-grid-card-2 .hinged-grid-text,
+.hinged-grid-card-3 .hinged-grid-text {
+  max-width: 100%;
+}
+
+.hinged-grid-text h3 {
+  margin: 0 0 0.35rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444444;
+}
+
+.hinged-grid-text p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Base card variants (no specific images so sections can override) */
+.hinged-grid-card-2,
+.hinged-grid-card-3 {
+  background-color: #f5f5ff;
+}
+
+/* Section 10 (Hinged Lids) card backgrounds */
+.section10-hinged .hinged-grid-card-1 {
+  background-image: url('https://storage.capsandplugsusa.com/public/editor/image/product/navigate_69dd369cc9501.jpg');
+}
+
+.section10-hinged .hinged-grid-card-4 {
+  background-image: url('https://storage.capsandplugsusa.com/public/editor/image/product/navigate_69dd38806c5cb.jpg');
+}
+
+/* Section 11 (BioMax) card backgrounds – update these URLs as needed */
+.section11-biomax .hinged-grid-card-1 {
+  background-image: url('https://storage.capsandplugsusa.com/public/editor/image/product/navigate_69dd3c94e466c.jpg');
+}
+
+.section11-biomax .hinged-grid-card-4 {
+  background-image: url('https://storage.capsandplugsusa.com/public/editor/image/product/navigate_69dd3dc2451db.jpg');
+}
+
+/* Section 12 (Screw Tops) card backgrounds – update these URLs as needed */
+.section12-screw .hinged-grid-card-1 {
+  background-image: url('https://storage.capsandplugsusa.com/public/editor/image/product/navigate_69dd3eece608d.jpg');
+}
+
+.section12-screw .hinged-grid-card-4 {
+  background-image: url('https://storage.capsandplugsusa.com/public/editor/image/product/navigate_69dd3fd038671.jpg');
+}
+
+/* Section 6 - three-image grid (2 columns: 2 stacked squares + 1 tall) */
+.section6-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.section6-image {
+  border-radius: 18px;
+  background-size: cover;
+  background-position: center;
+}
+
+.section6-image-1,
+.section6-image-2 {
+  aspect-ratio: 1 / 1; /* perfect squares in first column */
+}
+
+.section6-image-1 {
+  grid-column: 1;
+  grid-row: 1;
+  background-image: url('https://storage.capsandplugsusa.com/public/editor/image/product/navigate_69af0ef00f026.png');
+}
+
+.section6-image-2 {
+  grid-column: 1;
+  grid-row: 2;
+  background-image: url('https://storage.capsandplugsusa.com/public/editor/image/product/navigate_69af0f06d3baf.png');
+}
+
+.section6-image-3 {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  aspect-ratio: 1 / 2; /* twice as tall as it is wide */
+  background-image: url('https://storage.capsandplugsusa.com/public/editor/image/product/navigate_69af0e650a949.png');
+}
+
+@media (max-width: 767.98px) {
+  .section6-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section6-image-1,
+  .section6-image-2,
+  .section6-image-3 {
+    grid-column: auto;
+    grid-row: auto;
+    aspect-ratio: 1 / 1; /* on mobile, just use squares stacked */
+  }
+}
+
+  /* NEW: 6-line feature list section */
+.feature-list-section {
+  background-color: rgba(220, 213, 244, 0.25); /* #DCD5F4 at 25% */
+  padding: 60px 0; /* smaller vertical spacing */
+}
+
+.feature-list-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.feature-pill {
+  background-color: #ffffff;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;   /* was: space-between */
+  gap: 1rem;                  /* add a little space between icon and text */
+}
+
+
+.feature-pill-text {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #000000;
+  text-align: left;              /* keep text left-aligned */
+}
+
+.feature-pill-text strong {
+  color: #1E5C96;
+}
+
+.feature-pill-icon {
+  width: 4rem;
+  height: 4rem;
+  flex-shrink: 0;
+  align-self: center; /* ensure icon is vertically centered within the pill */
+}
+
+.two-col-equal-height {
+ min-height:616px;          /* ensure text columns are tall enough */
+  border-radius: 16px;
+  overflow: visible;           /* prevent inner content from spilling out */
+  
+}
+
+.two-col-equal-height img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+/* Section 5 - two-column star cards */
+.rating-section {
+  background-color: #1E5C96; /* match Section 2 */
+  padding: 60px 60px 90px; /* extra space at bottom of section */
+}
+
+.rating-section .row {
+  --bs-gutter-x: 3rem; /* tighter gap between the two cards */
+}
+
+.rating-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 1rem;
+  margin: 1.5rem;
+  min-height: 10px; /* fixed visual size for both cards */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center content within equal-height card */
+}
+
+.rating-stars {
+  margin-bottom: 1.25rem;
+  margin-top:2rem;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+
+.rating-star {
+  width: 12rem;
+  height: 2.4rem;
+}
+
+.rating-text {
+  margin-bottom:1.5em;
+  font-size: 20px;
+  color: #333333;
+
+}
+
+.rating-highlight {
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  border-radius: 999px;
+  background-color: #efe9ff;
+  color: #1E5C96;
+  font-weight: 600;
+}
+
+.rating-name {
+  font-weight: 700;
+  color: #1E5C96;
+}
+
+/* Section 6 - product two-column layout */
+.products-section {
+  padding: 0px 0;
+}
+
+.products-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Section 5 - set content width to ~2000px */
+.three-ways-section .container-fluid {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+/* Remove extra gap under the "Three Ways To  Package" heading and shrink it 25% */
+.three-ways-section > .container-fluid > h2 {
+  margin-bottom: 0;
+  font-size: 2.25rem !important; /* 75% of original 3rem */
+}
+
+/* Section 5 - keep cards a fixed width and wrap when needed */
+.three-ways-section .row.align-items-stretch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.three-ways-section .row.align-items-stretch > .col-12.col-md-4.d-flex {
+  flex: 0 1 420px;   /* preferred card width */
+  max-width: 420px;
+}
+
+
+.product-card {
+  text-align: center;
+margin-top:1.25rem;
+margin-bottom:1.25rem;
+}
+
+.product-card img {
+  width: 100%;
+  object-fit: contain; /* keep aspect ratio, fit inside */
+  margin-bottom: 1.25rem;
+}
+
+/* Section 5: tighten spacing around images/cards */
+.three-ways-section .product-card {
+  margin: 0.75rem 1.5rem;
+  border-radius: 24px;
+  overflow: hidden; /* ensure image corners appear rounded */
+}
+
+.three-ways-section .product-card img {
+    margin-bottom: 1rem;
+    margin-top: 1.25rem;
+}
+
+/* Section 5: ensure all images have clearly rounded corners */
+.three-ways-section img {
+    border-radius: 24px !important;
+}
+
+.product-card h3 {
+  font-size: 0.94rem;
+  margin-bottom: 0.25rem;
+}
+
+.product-card h2 {
+  font-size: 1.31rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-card p {
+  margin-bottom: 1rem;
+}
+
+/* Section 5: reduce all body text size by ~25% */
+.three-ways-section .product-card p {
+  font-size: 0.75rem;
+}
+
+/* Section 5: tighten vertical spacing between text elements */
+.three-ways-section .product-card h3 {
+  margin-bottom: 0.15rem;
+}
+
+.three-ways-section .product-card h2 {
+  margin-bottom: 0.4rem;
+}
+
+.three-ways-section .product-card p {
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1E5C96;
+  letter-spacing: 0.03em;
+  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.product-divider {
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 1.25rem 0;
+}
+
+.product-buy-btn {
+  margin-bottom: 1rem;
+}
+
+/* Section - Sample Packs */
+.sample-packs-section {
+  padding: 2.5rem 0 3rem;
+  background-color: #f7fbff;
+}
+
+.sample-packs-title {
+  text-align: center;
+  color: #1E5C96;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.sample-pack-card {
+  background-color: #ffffff;
+  border: 1px solid #dbe8f4;
+  border-radius: 18px;
+  padding: 1.5rem;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(30, 92, 150, 0.08);
+}
+
+.sample-pack-card img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+.sample-pack-card h3 {
+  font-size: 0.95rem;
+  color: #5f6b7a;
+  margin-bottom: 0.25rem;
+}
+
+.sample-pack-card h4 {
+  font-size: 1.45rem;
+  color: #1f2d3d;
+  margin-bottom: 0.75rem;
+}
+
+.sample-pack-card p {
+  color: #3f4a58;
+  font-size: 0.98rem;
+  margin-bottom: 1rem;
+}
+
+.sample-pack-price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1E5C96;
+  margin-bottom: 1.1rem;
+}
+
+/* Section 7 - video, no colored background */
+.video-overlay-section {
+  position: relative;
+  padding: 3rem 0;
+  overflow: hidden;
+}
+
+.video-overlay-bg {
+  display: none; /* remove background image overlay */
+}
+
+.video-overlay-content {
+  position: relative;
+  z-index: 1;
+}
+
+.video-wrapper-card {
+ 
+  padding: 0rem;
+  margin: 2rem 3rem; /* extra horizontal margin for the video card */
+  border-radius: 16px;
+}
+
+/* Round the Section 7 video corners */
+.video-wrapper-card .ratio {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Make Section 7 button solid brand color */
+.video-overlay-section .btn-outline-brand {
+  background-color: #ffffff;
+  color: #03AB84;
+  border-color: #03AB84;
+}
+
+.video-overlay-section .btn-outline-brand.btn-buy-now:hover {
+  background-color: #028767;
+  color: #ffffff;
+  border-color: #028767;
+}
+
+/* Brand-colored background section matching buttons */
+.section-brand-bg {
+  background-color: #1E5C96;
+  color: #ffffff;
+}
+
+.section-brand-bg h2,
+.section-brand-bg h3 {
+  color: #ffffff;
+}
+
+.section-brand-bg p {
+  color: #ffffff;
+}
+/* Next section: 2-row, 2-column layout with blue cards */
+.info-cards-section .info-card {
+  background-color: #c6E4F4;
+  border-radius: 16px;
+}
+
+/* Image-only info card in Section 11 should not have a background color */
+.info-cards-section .info-card.image-only {
+  background-color: transparent;
+}
+
+.info-cards-section .info-card-icon {
+  width: 64px;
+  height: 64px;
+}
+
+/* Section: 2 columns (image + stacked pills) */
+.image-pills-section .pill-card {
+  border-radius: 16px;
+}
+
+/* Make pills in the image+pills section use purple text */
+.image-pills-section .feature-pill-text {
+  color: #1E5C96;
+}
+
+/* White button with brand-colored text in image+pills section */
+.image-pills-section .btn-outline-brand {
+  background-color: #ffffff;
+  color: #03AB84;
+  border-color: #ffffff;
+}
+
+/*=====================
+ slick slider css start
+==========================*/
+.slick-slider {
+    overflow: hidden;
+}
+.slick-slider.slick-slider {
+    overflow: visible;
+}
+
+.no-arrow .slick-next,
+.no-arrow .slick-prev {
+    display: none !important;
+}
+
+.theme-dots .slick-dots {
+    bottom: 10px;
+}
+.theme-dots .slick-dots li button:before {
+    font-size: 12px;
+}
+.theme-dots .slick-dots li.slick-active button:before {
+    color: var(--theme-deafult);
+}
+
+.theme-dots.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+
+.slick-default-margin .slick-list {
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.slick-default-margin .slick-slide > div {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+
+/* (Removed width constraints for image strips and email signup) */
+
+/* Section 7 - Which Cosmetic Container base text + rows styling */
+.container-choice-section {
+  color: #1E5C96;
+}
+
+.container-choice-section .row.mb-4 {
+  background-color: #f4f7fa; /* slightly lighter blue */
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+/* Mobile tweaks: adjust hero spacing on small screens */
+@media (max-width: 576px) {
+  .video_text_row {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/**/
+.plans_column{
+    &.plans_column_1{
+        .plans_column_in{
+            border-color: #7ed321;
+
+            .plan_price{
+                color: #3D4043;
+            }
+
+            .custom_btn{
+                background-color: #7ed321;
+
+                &:hover{
+                    background-color: #6cbc15;
+                    color: #595959;
+                }
+            }
+        }
+    }
+
+    &.plans_column_2{
+        .plans_column_in{
+            border-color: #9b9bb4;
+
+            .plan_price{
+                color: #3D4043;
+            }
+
+            .custom_btn{
+                background-color: #9b9bb4;
+
+                &:hover{
+                    background-color: #8a8aa8;
+                    color: #595959;
+                }
+            }
+        }
+    }
+
+    &.plans_column_3{
+        .plans_column_in{
+            border-color: #e6bf00;
+
+            .plan_price{
+                color: #3D4043;
+            }
+
+            .custom_btn{
+                background-color: #e6bf00;
+
+                &:hover{
+                    background-color: #d1ae00;
+                    color: #595959;
+                }
+            }
+        }
+    }
+
+    .plans_column_in{
+        background-color: #fff;
+        border-radius: 56px;
+        padding: 50px;
+        border: 1px solid #fff;
+        height: 100%;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+
+        .plan_price{
+            font-weight: 700;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            margin: 0 0 30px;
+        }
+
+        .plan_item_list{
+            li{
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #9b9b9b;
+
+                &:last-child{
+                    border-bottom: 0;
+                }
+
+
+                p{
+                    font-weight: 400          ;
+                    font-size: 16px;
+                    text-align: left;
+                    line-height: 25px;
+                    letter-spacing: .01em;
+                    color: #3c4043;
+
+                    .fa{
+                        color: #03ab84;
+                        margin-right: 9px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sleeve_label_machines{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #f7f7f7;
+    margin-bottom: 0;
+}
+
+
+.pr_joint_tube_section{
+    margin-top: 105px;
+    padding-bottom: 15px;
+
+    .pr_joint_tube_items{
+        &.pr_joint_tube_items_1{
+            margin-top: 30px;
+        }
+
+        &.pr_joint_tube_items_3{
+            margin: 75px 0;
+        }
+
+        .pr_joint_tube_item{
+            padding: 15px;
+
+            .pr_joint_tube_item_in{
+                padding: 45px;
+                height: 100%;
+
+                border-radius: 28px;
+                overflow: hidden;
+
+                &.pr_joint_tube_item_text_transparent{
+                    background-color: transparent;
+                    padding: 30px;
+                    border-radius: 0;
+                }
+
+                &.pr_joint_tube_item_img{
+                    padding: 0;
+                }
+
+                &.pr_joint_tube_item_1{
+                    background-color: #dcd5f4;
+                }
+
+                &.pr_joint_tube_item_4{
+                    background-color: #ffeded;
+                }
+
+                &.pr_joint_tube_item_5{
+                    background-color: #f7f7f7;
+                    height: auto;
+                    min-height: unset;
+                    padding: 30px;
+
+                    img{
+                        width: 95px;
+                        margin: 15px;
+                    }
+
+                    .right_side{
+                        flex: 1;
+                        padding: 15px;
+
+                        .section_title{
+                            margin: 0 0 10px;
+                        }
+                    }
+                }
+
+                &.pr_joint_tube_item_6{
+                    background-color: #fbf48b;
+                    border: 4px solid #3d4043;
+                }
+
+                &.pr_joint_tube_item_7{
+                    border: 4px solid #3d4043;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                }
+
+                &.pr_joint_tube_item_8{
+                    background-color: #c8f4c6;
+                }
+
+                .pr_joint_tube_icons{
+
+                    svg{
+                        height: 65px;
+                        padding: 15px 20px 15px 0;
+                    }
+                }
+
+                & > span{
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    color: #03ab84;
+                    margin-top: 0;
+                    font-size: 16px;
+                    line-height: 1.5em;
+                    margin-bottom: 14px;
+                }
+
+            }
+
+
+        }
+
+
+    }
+}
+
+
+.css_faq_row{
+    background-color: #fff;
+    border-radius: 56px;
+    padding: 30px 60px 60px;
+
+    .css_faq_list{
+        li{
+            margin-top: 30px;
+            width: 100%;
+
+            .css_faq_title{
+                width: 100%;
+                font-weight: 700;
+                padding: 15px;
+                background: #fff;
+                border: 1px solid #9b9b9b;
+                border-radius: 5px;
+                font-size: 20px;
+                line-height: 28px;
+                color: #3c4043;
+                letter-spacing: 0;
+                display: grid;
+                grid-template-columns: 1fr 20px;
+                column-gap: 12px;
+                align-items: start;
+
+                span{
+                    text-align: left;
+                }
+
+                .faq_icon{
+                    font-size: 20px;
+                    line-height: 1;
+                    width: 20px;
+                    text-align: center;
+                    justify-self: end;
+                    margin-top: 3px;
+                }
+            }
+
+            .css_faq_content{
+                padding: 15px;
+                margin-top: 8px;
+                display: none;
+            }
+        }
+    }
+}
+
+.pr_faq_img{
+    border-radius: 28px;
+}
+
+.pr_faq_list{
+
+    li{
+
+        .pr_faq_title{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 35px 0 15px 0;
+            width: 100%;
+            padding: 0;
+
+            span{
+                font-weight: 700;
+                border-radius: 15px;
+                line-height: 1.5em;
+                color: #333;
+                font-size: 20px;
+                flex: 1;
+                text-align: left;
+            }
+
+            .fa{
+                font-size: 20px;
+                margin-left: 5px;
+            }
+        }
+
+        .pr_faq_content{
+            display: none;
+        }
+    }
+
+    &.pr_faq_list_2{
+        li{
+            .pr_faq_content{
+                border-bottom: 1px solid #000;
+            }
+        }
+    }
+}
+
+.pr_main_faq_section{
+    background-color: transparent;
+
+    .pr_main_faq_item{
+        padding: 30px;
+        border-radius: 28px;
+        align-items: flex-start;
+        border: 1px solid rgba(0, 0, 0, .36);
+
+        h4{
+            color: #3d4043;
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0 0 8px;
+
+            .fa{
+                font-size: 18px;
+                color: #ffb700;
+                margin-right: 5px;
+            }
+        }
+
